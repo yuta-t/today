@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="DiaryTableViewCell" id="KGk-i7-Jjw" customClass="DiaryTableViewCell" customModule="today" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="70"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vk5-ER-fRc">
+                        <rect key="frame" x="8" y="49" width="304" height="12"/>
+                        <fontDescription key="fontDescription" name="HiraKakuProN-W3" family="Hiragino Kaku Gothic ProN" pointSize="12"/>
+                        <color key="textColor" red="0.50196081399917603" green="0.50196081399917603" blue="0.50196081399917603" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2jI-6G-qa1">
+                        <rect key="frame" x="8" y="12" width="304" height="14"/>
+                        <fontDescription key="fontDescription" name="HiraKakuProN-W3" family="Hiragino Kaku Gothic ProN" pointSize="14"/>
+                        <color key="textColor" red="0.50196081400000003" green="0.50196081400000003" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vvR-7A-dub">
+                        <rect key="frame" x="8" y="29" width="304" height="16"/>
+                        <fontDescription key="fontDescription" name="HiraKakuProN-W6" family="Hiragino Kaku Gothic ProN" pointSize="15"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="vvR-7A-dub" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="2fh-ha-nfz"/>
+                    <constraint firstAttribute="centerY" secondItem="vvR-7A-dub" secondAttribute="centerY" id="4Cy-2q-mbh"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="vk5-ER-fRc" secondAttribute="bottom" id="5B5-YM-XA0"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="2jI-6G-qa1" secondAttribute="trailing" id="8LO-UH-TkE"/>
+                    <constraint firstItem="vvR-7A-dub" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="JnS-nJ-qyn"/>
+                    <constraint firstItem="vk5-ER-fRc" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="Pim-ws-gcX"/>
+                    <constraint firstItem="vvR-7A-dub" firstAttribute="top" secondItem="2jI-6G-qa1" secondAttribute="bottom" constant="3" id="Pnd-9r-gTV"/>
+                    <constraint firstItem="2jI-6G-qa1" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="SnL-2G-AfH"/>
+                    <constraint firstItem="2jI-6G-qa1" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="4" id="fbw-5t-hSa"/>
+                    <constraint firstItem="vvR-7A-dub" firstAttribute="top" secondItem="2jI-6G-qa1" secondAttribute="bottom" constant="5" id="ocX-Ec-xVG"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="vvR-7A-dub" secondAttribute="trailing" id="q8g-ms-e9k"/>
+                    <constraint firstItem="2jI-6G-qa1" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="tVI-9F-9Ro"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="vk5-ER-fRc" secondAttribute="trailing" id="wWB-AI-Ab4"/>
+                </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="SnL-2G-AfH"/>
+                        <exclude reference="4Cy-2q-mbh"/>
+                        <exclude reference="JnS-nJ-qyn"/>
+                        <exclude reference="ocX-Ec-xVG"/>
+                    </mask>
+                </variation>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="dateLabel" destination="vk5-ER-fRc" id="o5L-DC-THp"/>
+                <outlet property="nameLabel" destination="2jI-6G-qa1" id="64s-8U-TO4"/>
+                <outlet property="titleLabel" destination="vvR-7A-dub" id="k0c-TV-dIw"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+</document>
